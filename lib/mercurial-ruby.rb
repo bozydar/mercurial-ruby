@@ -16,7 +16,7 @@ module Mercurial
     # Access instance of Mercurial::Configuration.
     #
     #  config = Mercurial.configuration
-    #  config.hg_binary_path # => "/usr/local/bin/hg"
+    #  config.hg_binary_path # => "/usr/bin/hg"
     #
     def configuration
       @_configuration ||= Mercurial::Configuration.new
@@ -24,7 +24,7 @@ module Mercurial
     
     # Change gem's global settings.
     #
-    #  Mercurial.configure do |conf|
+    #  Mercurial.configure do |conf|/usr/local/bin/hg
     #    conf.hg_binary_path = "/usr/bin/hg"
     #  end
     #

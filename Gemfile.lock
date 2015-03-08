@@ -1,18 +1,34 @@
+GIT
+  remote: git://github.com/kgrz/json.git
+  revision: e49894d3c5c2df8a43384cb36b444d8096a9ea0e
+  specs:
+    json (1.8.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
+    ansi (1.5.0)
+    builder (3.2.2)
     git (1.2.5)
+    hashie (3.4.0)
     jeweler (1.8.4)
       bundler (~> 1.0)
       git (>= 1.2.5)
       rake
       rdoc
-    json (1.7.7)
     metaclass (0.0.1)
     minitest (4.7.0)
+    minitest-reporters (0.14.24)
+      ansi
+      builder
+      minitest (>= 2.12, < 5.0)
+      powerbar
     mocha (0.13.3)
       metaclass (~> 0.0.1)
     open4 (1.3.0)
+    powerbar (1.0.12)
+      ansi (~> 1.5.0)
+      hashie (>= 1.1.0)
     rake (10.0.4)
     rdoc (4.0.1)
       json (~> 1.4)
@@ -23,6 +39,8 @@ PLATFORMS
 DEPENDENCIES
   bundler
   jeweler
+  json!
   minitest
+  minitest-reporters (>= 0.5.0)
   mocha
   open4 (~> 1.3.0)
