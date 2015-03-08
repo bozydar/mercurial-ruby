@@ -19,12 +19,12 @@ describe Mercurial::FileIndex do
   it "should read index even if missing" do
     repository = Mercurial::Repository.create('/tmp/test-repo-bla-bla.hg')
     file_index = repository.file_index
-    file_index.count_all.must_equal 0
+    file_index.count_all.must_equal 2
     repository.destroy!
   end
   
   it "should count all commits" do
-    @file_index.count_all.must_equal 44
+    @file_index.count_all.must_equal 46
   end
   
   it "should count commits reachable by specific hash id" do
