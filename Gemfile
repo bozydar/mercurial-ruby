@@ -1,5 +1,7 @@
 source "http://rubygems.org"
 
+gemspec
+
 gem "open4", "~>1.3.0"
 gem 'json', :github => 'kgrz/json'
 
